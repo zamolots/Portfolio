@@ -1,17 +1,23 @@
-import {Container,
+import {
+    Container,
     Heading,
     Box,
     chakra,
     Image,
     Link,
-    useColorModeValue} from "@chakra-ui/react";
+    Text,
+    Badge,
+    useColorModeValue, Button, List
+} from "@chakra-ui/react";
 import LSection from "../components/lsection";
 import RSection from "../components/rsection";
+import NextLink from "next/link";
+import Layout from "../components/layouts/articleList";
 
 
 const About = () => {
     return(
-
+        <Layout title="About Me">
         <Container>
             <Box >
             <Box display={{md:'flex'}} mt={{md:6}} >
@@ -23,7 +29,7 @@ const About = () => {
                     textAlign="center"
                 >
                     <Box
-                        borderColor={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                        borderColor={useColorModeValue('#553C9A','pink')}
                         borderWidth={2}
                         borderStyle="solid"
                         w="100px"
@@ -50,26 +56,39 @@ const About = () => {
                 </Box>
             </Box>
 
-            <RSection>
+            <RSection delay={0.5}>
                 <Box>
-                    <Heading as="h3" variant="section-title">
+                    <Heading as="h3" variant="section-title"  color={useColorModeValue('#553C9A','pink')}>
                         About me
                     </Heading>
                     <Container>
-                        I am Developer based out of Dublin, Ireland passionate in Web Development.
-                        
-                    </Container>
+                        I am Developer based out of Dublin, Ireland and am passionate about Web Development.
+                        I use this passion in my projects.
 
+                    </Container>
+                    <NextLink href="projects" passHref>
+                        <Button  ml={3.5} mt={2} color={useColorModeValue('#553C9A','pink')}>
+                            View Projects
+                        </Button>
+                    </NextLink>
                 </Box>
             </RSection>
-            <LSection>
+            <LSection delay={0.5}>
                 <Box>
-                    <Heading as="h3" variant="section-title">
-                        About me
+                    <Heading as="h3" variant="section-title" color={useColorModeValue('#553C9A','pink')}>
+                        Professional Experience
                     </Heading>
-                    <Container>
-                        Lorem ipsum dolor siat. Duis aute irure dolor in reprehendeid est laborum.{' '}
-                        .
+                    <Container >
+                        <chakra.span fontSize={"18px"} fontWeight="bold">Intern in Software Development </chakra.span><chakra.span> - mCognito Labs</chakra.span>
+                        <Badge>July 2020 - Janurary 2021</Badge>
+                        <Text mt={2} fontSize="sm" >
+                            At mCognito Labs, I developed my understanding of coding
+                            specifically Java, JavaScript, HTML/CSS with a focus on web
+                            and mobile app development for eLearning.
+                            My duties included working with others to develop software
+                            development and independently reviewing code.
+
+                        </Text>
                     </Container>
 
                 </Box>
@@ -77,6 +96,7 @@ const About = () => {
 
             </Box>
         </Container>
+        </Layout>
     )
 }
 export default About

@@ -13,9 +13,12 @@ import LSection from "../components/lsection";
 import RSection from "../components/rsection";
 import Section from "../components/section"
 import NextLink from 'next/link'
+import Layout from "../components/layouts/articleList";
+
 
 const Page = () => {
     return(
+        <Layout>
         <Center>
         <Box>
 
@@ -30,7 +33,7 @@ const Page = () => {
                 >
                     <Section flexGrow={1} alignItems="start" delay={0.5}>
                         <Heading as="h3" size="xl" >
-                            Heya, I'm
+                            Hey, I'm
                         </Heading>
                         <Heading as="h1" size="3xl"  variant="page-title" color={useColorModeValue('#553C9A','pink', )} >
                             Alex Zamolotskikh
@@ -57,6 +60,7 @@ const Page = () => {
 
         </Box>
         </Center>
+        </Layout>
     )
 }
 export default Page
