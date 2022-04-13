@@ -1,48 +1,62 @@
-
+import Image from 'next/image'
+import Logo from "./logo";
 import NextLink from 'next/link'
 import {
+    Heading,
+    Text,
     Container,
     Box,
     Link,
     Stack,
-    Heading,
-    Flex,
-    Menu,
-    MenuItem,
-    MenuList,
     MenuButton,
     IconButton,
+    Flex,
+    Menu,
+    Button,
+    MenuItem,
+    MenuList,
     useColorModeValue
 } from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
+import Hamburger from 'hamburger-react'
 import ThemeToggleButton from './themebutton'
+import {useState} from "react";
+import styled from "@emotion/styled"
+import {HamburgerIcon} from "@chakra-ui/icons";
+
 
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
+
         <NextLink href={href} passHref scroll={false}>
-            <Link
-                p={2}
-                bg={active ? 'black' : undefined}
-                color={active ? '#202023' : inactiveColor}
-                target={target}
-                {...props}
+            <Button p={2}
+                    bg={active ? useColorModeValue('#B794F4','pink') : undefined}
+                    color={active ? '#202023' : inactiveColor}
+                    variant="ghost"
+                    target={target}
+                    {...props}
+
             >
+
                 {children}
-            </Link>
+
+
+            </Button>
         </NextLink>
     )
 }
 
+
 const Navbar = props => {
     const { path } = props
+    const [isOpen, setOpen] = useState(false)
 
     return (
         <Box
             position="fixed"
-            as="nav"
+            as = "nav"
             w="100%"
             bg={useColorModeValue('#ffffff40', '#20202380')}
             css={{ backdropFilter: 'blur(10px)' }}
@@ -57,9 +71,9 @@ const Navbar = props => {
                 align="center"
                 justify="space-between"
             >
-                <Flex align="center" mr={5}>
-                    <Heading as="h1" size="md" letterSpacing={'tighter'}>
-                        Alex Zamolotskikh
+                <Flex align="center" mb={2}  mr={5}>
+                    <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+                        <Logo />
                     </Heading>
                 </Flex>
 
@@ -71,30 +85,48 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
+                    <LinkItem href="/about" path={path}>
+                        About Me
+                    </LinkItem>
                     <LinkItem href="/projects" path={path}>
                         Projects
                     </LinkItem>
+
+                    <LinkItem href="/contact" path={path}>
+                        Contact Me
+                    </LinkItem>
+                    <LinkItem href="/AlexZamolotskikhResume.pdf" path={path}>
+                        Resume
+                    </LinkItem>
+
 
                 </Stack>
 
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
 
-                    <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                    <Box ml={2} mr={2} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu isLazy id="navbar-menu">
                             <MenuButton
                                 as={IconButton}
-                                icon={<HamburgerIcon />}
+                                icon={<HamburgerIcon/>}
                                 variant="outline"
                                 aria-label="Options"
                             />
                             <MenuList>
-                                <NextLink href="/" passHref>
+                                <NextLink href="/about" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
+
                                 </NextLink>
-                                <LinkItem href="/projects" path={path}>
+                                <NextLink href="/projects" passHref>
                                     <MenuItem as={Link}>Projects</MenuItem>
-                                </LinkItem>
+                                </NextLink>
+                                <NextLink href="/contact" passHref>
+                                    <MenuItem as={Link}>Contact Me</MenuItem>
+                                </NextLink>
+                                <NextLink href="/AlexZamolotskikhResume.pdf" path={path}>
+                                    <MenuItem as={Link}>Resume</MenuItem>
+                                </NextLink>
                             </MenuList>
                         </Menu>
                     </Box>
