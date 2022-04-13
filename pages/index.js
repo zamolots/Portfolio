@@ -1,16 +1,11 @@
 import {
-    Container,
+
     Heading,
     Box,
-    chakra,
-    Image,
-    Link,
     Stack,
     Button,
     useColorModeValue, Text, Center
 } from "@chakra-ui/react";
-import LSection from "../components/lsection";
-import RSection from "../components/rsection";
 import Section from "../components/section"
 import NextLink from 'next/link'
 import Layout from "../components/layouts/articleList";
@@ -33,6 +28,7 @@ const Page = () => {
                 >
                     <Section flexGrow={1} alignItems="start" delay={0.5}>
                         <Heading as="h3" size="xl" >
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
                             Hey, I'm
                         </Heading>
                         <Heading as="h1" size="3xl"  variant="page-title" color={useColorModeValue('#553C9A','pink', )} >

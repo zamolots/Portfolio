@@ -1,10 +1,8 @@
 import Layout from "../components/layouts/articleList";
-import {Box, Button, Container, Heading, Image, Link, SimpleGrid, Text, useColorModeValue} from "@chakra-ui/react";
-import LSection from "../components/lsection";
-import {ExternalLinkIcon} from "@chakra-ui/icons";
-import RSection from "../components/rsection";
+import {Box, Button, Container, Heading, Image, Link, useColorModeValue} from "@chakra-ui/react";
+
 import Section from "../components/section";
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import {  IoLogoGithub } from 'react-icons/io5'
 
 
 const Page = () =>(

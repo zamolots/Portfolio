@@ -5,19 +5,18 @@ import {
     Container,
     Heading,
     Image,
-    LinkBox,
-    LinkOverlay,
+
     SimpleGrid, Stack,
     Text,
     Center,
     Link,
     useColorModeValue, Button
 } from "@chakra-ui/react";
-import {GridThing} from "../../components/grid";
+
 import LSection from "../../components/lsection";
 import RSection from "../../components/rsection";
 import Section from "../../components/section";
-import NextLink from "next/link";
+
 import {  ExternalLinkIcon } from "@chakra-ui/icons"
 
 const Project = () =>(

@@ -1,9 +1,9 @@
-import Image from 'next/image'
+
 import Logo from "./logo";
 import NextLink from 'next/link'
 import {
     Heading,
-    Text,
+
     Container,
     Box,
     Link,
@@ -17,10 +17,8 @@ import {
     MenuList,
     useColorModeValue
 } from '@chakra-ui/react'
-import Hamburger from 'hamburger-react'
+
 import ThemeToggleButton from './themebutton'
-import {useState} from "react";
-import styled from "@emotion/styled"
 import {HamburgerIcon} from "@chakra-ui/icons";
 
 
@@ -28,11 +26,12 @@ import {HamburgerIcon} from "@chakra-ui/icons";
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    const activeColor = useColorModeValue('#B794F4','pink')
     return (
 
         <NextLink href={href} passHref scroll={false}>
             <Button p={2}
-                    bg={active ? useColorModeValue('#B794F4','pink') : undefined}
+                    bg={active ? activeColor : undefined}
                     color={active ? '#202023' : inactiveColor}
                     variant="ghost"
                     target={target}
@@ -51,7 +50,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 
 const Navbar = props => {
     const { path } = props
-    const [isOpen, setOpen] = useState(false)
+
 
     return (
         <Box

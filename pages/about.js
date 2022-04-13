@@ -4,10 +4,9 @@ import {
     Box,
     chakra,
     Image,
-    Link,
     Text,
     Badge,
-    useColorModeValue, Button, List
+    useColorModeValue, Button,
 } from "@chakra-ui/react";
 import LSection from "../components/lsection";
 import RSection from "../components/rsection";

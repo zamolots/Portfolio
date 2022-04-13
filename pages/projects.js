@@ -2,19 +2,17 @@ import {
     Container,
     Heading,
     SimpleGrid,
-    Divider,
+
     Box,
     useColorModeValue,
     Image,
-    Text,
-    Button,
-    Grid, GridItem, Badge
+
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/articleList'
 import RSection from "../components/rsection";
 import LSection from "../components/lsection";
 import Section  from "../components/section"
-import Me from "../public/images/me.jpeg"
+
 import {GridThing} from "../components/grid"
 
 const Projects = () => {

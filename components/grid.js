@@ -1,9 +1,8 @@
 import NextLink from 'next/link'
-import Image from 'next/image'
-import {Box, Text, LinkBox, LinkOverlay, useColorModeValue} from '@chakra-ui/react'
-import { Global } from '@emotion/react'
 
-export const GridThing = ({ children, id, title, thumbnail }) => (
+import {Box, Text, LinkBox, LinkOverlay, useColorModeValue} from '@chakra-ui/react'
+
+export const GridThing = ({ children, id, title }) => (
     <Box w="100%" textAlign="center"
          borderWidth="3px"
          borderColor={useColorModeValue('#553C9A','pink')}
