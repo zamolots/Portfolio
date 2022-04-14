@@ -19,11 +19,7 @@ import {
 
 import ThemeToggleButton from './themebutton'
 import {HamburgerIcon} from "@chakra-ui/icons";
-import styled from "@emotion/styled";
 
-const Wrapper = styled.div`
-        padding-left: calc(100vw - 100%);
-    `
 
 
 const LinkItem = ({ href, path, target, children, ...props }) => {

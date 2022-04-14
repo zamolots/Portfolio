@@ -12,15 +12,13 @@ import LSection from "../components/lsection";
 import RSection from "../components/rsection";
 import NextLink from "next/link";
 import Layout from "../components/layouts/articleList";
-import Section from "../components/section";
-import {IoLogoGithub, IoLogoLinkedin, IoMail} from "react-icons/io5";
-import styled from "@emotion/styled";
-import { useClipboard } from '@chakra-ui/react'
+
+import {IoLogoGithub, IoLogoLinkedin} from "react-icons/io5";
+
 import React from "react";
 
 const About = () => {
-    const [value, setValue] = React.useState('alex@karanagai.com')
-    const { hasCopied, onCopy } = useClipboard(value)
+
     return(
         <Layout title="About Me"
         >
