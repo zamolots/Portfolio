@@ -107,15 +107,15 @@ const About = () => {
                 </Heading>
                 <Box w="100%" textAlign="center"
                      overflow="hidden" p={3}>
-                    <SimpleGrid columns={[1,1,2]} gap={2} >
+                    <SimpleGrid columns={[2]} gap={2} >
 
 
                         <Link isExternal="true"  href="https://github.com/zampilled"
                         >
                             <Button
 
-                                size={"lg"}
-                                fontSize="30px"
+                                size={"md"}
+                                fontSize="20px"
                                 variant="outline"
                                 borderWidth={"5px"}
                                 borderColor={useColorModeValue('#553C9A','pink')}
@@ -126,8 +126,8 @@ const About = () => {
                             <Button
 
 
-                                size={"lg"}
-                                fontSize="30px"
+                                size={"md"}
+                                fontSize="20px"
                                 variant="outline"
                                 borderWidth={"5px"}
                                 borderColor={useColorModeValue('#553C9A','pink')}
