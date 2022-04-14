@@ -1,7 +1,0 @@
-<Image
-                    src="/"
-                    alt={title}
-                    className="grid-item-thumbnail"
-                    width="10px"
-                    height="10px"
-                />

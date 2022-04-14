@@ -57,14 +57,14 @@ const Projects = () => {
                 <Heading variant="section-title"  textAlign="center"  fontSize={35} mb={4} color={useColorModeValue('#553C9A','pink')}>
                     Projects
                 </Heading>
-                <Section >
-                <SimpleGrid columns={[1, 1, 2]} gap={6}>
+                <Section>
+                <SimpleGrid mt={5} columns={[1, 1, 2]} gap={6}>
 
                         <LSection delay={0.5}>
                         <GridThing
                                   id="ordeo"
                                   title="Ordeo"
-                                  thumbnail="">
+                                  image="/images/ordeo3.PNG">
                             An inventory stocking Full Stack App using React/Redux/Django-Rest-Framework.
                         </GridThing>
                         </LSection>
@@ -72,7 +72,8 @@ const Projects = () => {
                         <GridThing
                             id="remback"
                             title="Remback"
-                            thumbnail=""
+                            image="/images/after2.PNG"
+
                         >
                             Web App that Removes the Backgrounds of Images using React/Django-Rest-Framework.
                         </GridThing>

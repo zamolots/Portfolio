@@ -6,18 +6,27 @@ import {
     Image,
     Text,
     Badge,
-    useColorModeValue, Button,
+    useColorModeValue, Button, SimpleGrid, Link,
 } from "@chakra-ui/react";
 import LSection from "../components/lsection";
 import RSection from "../components/rsection";
 import NextLink from "next/link";
 import Layout from "../components/layouts/articleList";
-
+import Section from "../components/section";
+import {IoLogoGithub, IoLogoLinkedin, IoMail} from "react-icons/io5";
+import styled from "@emotion/styled";
+import { useClipboard } from '@chakra-ui/react'
+import React from "react";
 
 const About = () => {
+    const [value, setValue] = React.useState('alex@karanagai.com')
+    const { hasCopied, onCopy } = useClipboard(value)
     return(
-        <Layout title="About Me">
-        <Container>
+        <Layout title="About Me"
+        >
+
+
+        <Container >
             <Box >
             <Box display={{md:'flex'}} mt={{md:6}} >
                 <Box
@@ -94,7 +103,45 @@ const About = () => {
             </LSection>
 
             </Box>
+            <RSection delay={0.5}>
+                <Heading as="h3" variant="section-title" color={useColorModeValue('#553C9A','pink')}>
+                    Contact me
+                </Heading>
+                <Box w="100%" textAlign="center"
+                     overflow="hidden" p={3}>
+                    <SimpleGrid columns={[1,1,2]} gap={2} >
+
+
+                        <Link isExternal="true"  href="https://github.com/zampilled"
+                        >
+                            <Button
+
+                                size={"lg"}
+                                fontSize="30px"
+                                variant="outline"
+                                borderWidth={"5px"}
+                                borderColor={useColorModeValue('#553C9A','pink')}
+                                color={useColorModeValue('#553C9A','pink')} leftIcon={<IoLogoGithub/>} >Github</Button>
+                        </Link>
+                        <Link isExternal="true"  href="https://www.linkedin.com/in/zampilled/"
+                        >
+                            <Button
+
+
+                                size={"lg"}
+                                fontSize="30px"
+                                variant="outline"
+                                borderWidth={"5px"}
+                                borderColor={useColorModeValue('#553C9A','pink')}
+                                color={useColorModeValue('#553C9A','pink')} leftIcon={<IoLogoLinkedin/>} >Linkedin</Button>
+                        </Link>
+                    </SimpleGrid>
+                </Box>
+
+            </RSection>
+
         </Container>
+
         </Layout>
     )
 }

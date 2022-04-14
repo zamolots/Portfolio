@@ -3,7 +3,6 @@ import Logo from "./logo";
 import NextLink from 'next/link'
 import {
     Heading,
-
     Container,
     Box,
     Link,
@@ -20,7 +19,11 @@ import {
 
 import ThemeToggleButton from './themebutton'
 import {HamburgerIcon} from "@chakra-ui/icons";
+import styled from "@emotion/styled";
 
+const Wrapper = styled.div`
+        padding-left: calc(100vw - 100%);
+    `
 
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
@@ -53,6 +56,7 @@ const Navbar = props => {
 
 
     return (
+
         <Box
             position="fixed"
             as = "nav"
@@ -90,10 +94,6 @@ const Navbar = props => {
                     <LinkItem href="/projects" path={path}>
                         Projects
                     </LinkItem>
-
-                    <LinkItem href="/contact" path={path}>
-                        Contact Me
-                    </LinkItem>
                     <LinkItem href="/AlexZamolotskikhResume.pdf" path={path}>
                         Resume
                     </LinkItem>
@@ -119,9 +119,6 @@ const Navbar = props => {
                                 </NextLink>
                                 <NextLink href="/projects" passHref>
                                     <MenuItem as={Link}>Projects</MenuItem>
-                                </NextLink>
-                                <NextLink href="/contact" passHref>
-                                    <MenuItem as={Link}>Contact Me</MenuItem>
                                 </NextLink>
                                 <NextLink href="/AlexZamolotskikhResume.pdf" path={path}>
                                     <MenuItem as={Link}>Resume</MenuItem>

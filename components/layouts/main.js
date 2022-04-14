@@ -1,22 +1,34 @@
 import Head from 'next/head'
 import {Box, Container} from "@chakra-ui/react";
 import Navbar from "../navbar";
+import styled from "@emotion/styled";
+
+
 const Main = ({children , router}) =>{
+
     return(
+
         <Box as="main" pb={8}>
             <Head>
-                <meta name="viewport" content="width:device-width, initial-scale=1"/>
-
-                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+                <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+                <link rel="manifest" href="/site.webmanifest"/>
                 <title>Alex Zamolotskikh - Homepage</title>
 
             </Head>
+
             <Navbar path={router.asPath} />
+
             <Container maxW="container.md" pt={14}>
 
                 {children}
             </Container>
+
         </Box>
+
     )
 }
 
