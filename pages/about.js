@@ -68,7 +68,7 @@ const About = () => {
                         About me
                     </Heading>
                     <Container>
-                        I am Developer based out of Dublin, Ireland and am passionate about Web Development.
+                        I am a Developer based out of Dublin, Ireland and am passionate about Web Development.
                         I use this passion in my projects.
 
                     </Container>
