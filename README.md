@@ -1,6 +1,6 @@
 # **Portfolio**
 
->[Live Deployment]("https://zamo.netlify.app/")
+>[Live Deployment](https://zamo.netlify.app/)
 
 >This is my personal portfolio project feel free to
 > use any part of the code in your own portfolio except
