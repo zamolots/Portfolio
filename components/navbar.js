@@ -19,6 +19,7 @@ import {
 
 import ThemeToggleButton from './themebutton'
 import {HamburgerIcon} from "@chakra-ui/icons";
+import {IoLogoGithub, IoDocumentText} from "react-icons/io5";
 
 
 
@@ -37,10 +38,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
                     {...props}
 
             >
-
                 {children}
-
-
             </Button>
         </NextLink>
     )
@@ -90,9 +88,13 @@ const Navbar = props => {
                     <LinkItem href="/projects" path={path}>
                         Projects
                     </LinkItem>
-                    <LinkItem href="/AlexZamolotskikhResume.pdf" path={path}>
+                    <LinkItem leftIcon={<IoDocumentText/>} href="/AlexZamolotskikhResume.pdf" path={path}>
                         Resume
                     </LinkItem>
+                    <LinkItem isExternal="true" leftIcon={<IoLogoGithub/>}  href="https://github.com/Zampilled/Portfolio" path={path}>
+                        Source
+                    </LinkItem>
+
 
 
                 </Stack>
@@ -117,8 +119,11 @@ const Navbar = props => {
                                     <MenuItem as={Link}>Projects</MenuItem>
                                 </NextLink>
                                 <NextLink href="/AlexZamolotskikhResume.pdf" path={path}>
-                                    <MenuItem as={Link}>Resume</MenuItem>
+                                    <MenuItem  as={Link}>Resume</MenuItem>
                                 </NextLink>
+                                <Link isExternal={true} href="https://github.com/Zampilled/Portfolio" path={path}>
+                                    <MenuItem  as={Link}>Source</MenuItem>
+                                </Link>
                             </MenuList>
                         </Menu>
                     </Box>
