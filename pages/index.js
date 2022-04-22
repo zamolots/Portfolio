@@ -36,7 +36,7 @@ const Page = () => {
                         </Heading>
                     </Section>
                     <Section flexGrow={1} alignItems="" delay={1}>
-                        <Text fontSize="2xl">I am a Full Stack Developer based out of Dublin, Ireland.</Text>
+                        <Text fontSize="2xl">I am a Software Developer based out of Dublin, Ireland.</Text>
                     </Section>
                     <Section flexGrow={1} alignItems="" delay={1.5}>
                         <Stack spacing={4} align='start'>

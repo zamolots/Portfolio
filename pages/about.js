@@ -58,7 +58,7 @@ const About = () => {
                     <Heading as="h1" variant="page-title" color={useColorModeValue('#553C9A','pink')} >
                         Alex Zamolotskikh
                     </Heading>
-                    <p>Full Stack Developer</p>
+                    <p>Software Developer</p>
                 </Box>
             </Box>
 
