@@ -72,7 +72,7 @@ const Project = () =>(
                         Framer Motion
                     </Badge>
                     <Badge colorScheme={useColorModeValue('purple','pink')}>
-                        Spotify Web Api
+                        Spotify Api
                     </Badge>
                 </Stack>
 
