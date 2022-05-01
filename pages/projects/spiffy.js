@@ -100,6 +100,7 @@ const Project = () =>(
             <Section delay={0.1}>
                 <Center>
                     <Text textAlign="justify">
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Spiffy is an extension of Spotify's Web API that allows spotify users to view their top song data
                         in a user friendly way. It uses a Nextjs Frontend with Chakra UI and Framer motion to create a seamless
                         experience for the user.
