@@ -78,7 +78,14 @@ const Projects = () => {
                             Web App that Removes the Backgrounds of Images using React/Django-Rest-Framework.
                         </GridThing>
                     </RSection>
-
+                    <LSection delay={0.5}>
+                        <GridThing
+                            id="spiffy"
+                            title="Spiffy"
+                            image="/images/spiffydemo.PNG">
+                            A Top Song Comparor using Nextjs / Framer Motion / Chakra UI and the Spotify Web API.
+                        </GridThing>
+                    </LSection>
 
                 </SimpleGrid>
                 </Section>

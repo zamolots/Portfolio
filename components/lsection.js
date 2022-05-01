@@ -12,7 +12,7 @@ const LSection = ({ children, delay = 0}) => (
         initial={{ x:-10, opacity: 0 }}
         animate={{ x: 0,opacity: 1 }}
         transition={{ duration: 0.8, delay }}
-        mb={6}
+        mb={0}
     >
         {children}
     </StyledDiv>
