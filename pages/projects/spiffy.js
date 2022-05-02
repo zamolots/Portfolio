@@ -78,8 +78,8 @@ const Project = () =>(
 
             </Center>
             <Box >
-                <SimpleGrid columns={[2]} gap={6}>
-                    <LSection delay={0.5} >
+               
+                    <Section delay={0.5} >
                         <Box align="end">
                             <Link isExternal="true" href="https://github.com/Zampilled/Spiffy">
                                 <Button  variant="outline"
@@ -89,11 +89,9 @@ const Project = () =>(
                                 >Source</Button>
                             </Link>
                         </Box>
-                    </LSection>
-                    <RSection delay={0.5}>
-                        
-                    </RSection>
-                </SimpleGrid>
+                    </Section>
+                  
+  
             </Box>
             <Section delay={0.1}>
                 <Center>
