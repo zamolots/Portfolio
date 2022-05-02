@@ -78,7 +78,7 @@ const Project = () =>(
 
             </Center>
             <Box >
-               
+               <Center>
                     <Section delay={0.5} >
                         <Box align="end">
                             <Link isExternal="true" href="https://github.com/Zampilled/Spiffy">
@@ -91,7 +91,7 @@ const Project = () =>(
                         </Box>
                     </Section>
                   
-  
+                </Center>
             </Box>
             <Section delay={0.1}>
                 <Center>
