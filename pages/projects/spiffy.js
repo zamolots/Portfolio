@@ -91,9 +91,7 @@ const Project = () =>(
                         </Box>
                     </LSection>
                     <RSection delay={0.5}>
-                        <Link isExternal="true" href="https://spifffy.netlify.app/">
-                            <Button variant="outline" rightIcon={<ExternalLinkIcon />} borderColor={useColorModeValue('#553C9A','pink')} color={useColorModeValue('#553C9A','pink')}>Demo</Button>
-                        </Link>
+                        
                     </RSection>
                 </SimpleGrid>
             </Box>
