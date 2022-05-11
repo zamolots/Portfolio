@@ -78,7 +78,7 @@ const Projects = () => {
                             Web App that Removes the Backgrounds of Images using React/Django-Rest-Framework.
                         </GridThing>
                     </RSection>
-                    <LSection delay={0.5}>
+                    <LSection delay={1}>
                         <GridThing
                             id="spiffy"
                             title="Spiffy"
