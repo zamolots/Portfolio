@@ -78,9 +78,10 @@ const Project = () =>(
 
             </Center>
             <Box >
-               <Center>
-                    <Section delay={0.5} >
+               <SimpleGrid columns={[2]} gap={6}>
+                    <LSection delay={0.5} >
                         <Box align="end">
+
                             <Link isExternal="true" href="https://github.com/Zampilled/Spiffy">
                                 <Button  variant="outline"
                                          rightIcon={<ExternalLinkIcon />}
@@ -89,9 +90,13 @@ const Project = () =>(
                                 >Source</Button>
                             </Link>
                         </Box>
-                    </Section>
-                  
-                </Center>
+                    </LSection>
+                    <RSection delay={0.5}>
+                        <Link isExternal="true" href="https://spifffy.netlify.app/">
+                            <Button variant="outline" rightIcon={<ExternalLinkIcon />} borderColor={useColorModeValue('#553C9A','pink')} color={useColorModeValue('#553C9A','pink')}>Demo</Button>
+                        </Link>
+                    </RSection>
+                </SimpleGrid>
             </Box>
             <Section delay={0.1}>
                 <Center>
