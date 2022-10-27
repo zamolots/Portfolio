@@ -95,11 +95,11 @@ const Project = () =>(
                         </Link>
                     </Box>
                 </LSection>
-                <RSection delay={0.5}>
+                {/* <RSection delay={0.5}>
                     <Link isExternal="true" href="https://zampilled.netsoc.ie/">
                     <Button variant="outline" rightIcon={<ExternalLinkIcon />} borderColor={useColorModeValue('#553C9A','pink')} color={useColorModeValue('#553C9A','pink')}>Demo</Button>
                     </Link>
-                </RSection>
+                </RSection> */}
                 </SimpleGrid>
             </Box>
             <Section delay={0.1}>

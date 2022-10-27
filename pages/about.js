@@ -55,10 +55,10 @@ const About = () => {
                     </Box>
                 </Box>
                 <Box flexGrow={1} alignItems="center">
-                    <Heading as="h1" variant="page-title" color={useColorModeValue('#553C9A','pink')} >
+                    <Heading as="h1" align="center" variant="page-title" color={useColorModeValue('#553C9A','pink')} >
                         Alex Zamolotskikh
                     </Heading>
-                    <p>Software Developer</p>
+                    <p align="center">Software Developer</p>
                 </Box>
             </Box>
 
@@ -85,6 +85,13 @@ const About = () => {
                         Professional Experience
                     </Heading>
                     <Container >
+                        <chakra.span fontSize={"18px"} fontWeight="bold">Full Stack Developer Intern </chakra.span><chakra.span> - Ambisense</chakra.span>
+                        <Badge>June 2022 - September 2022</Badge>
+                        <Text mt={2} fontSize="sm" >
+                        Over my internship at Ambisense I worked on a wide array of projects and with varying technologies. I mostly used Python, Javascript, and bash during my internship. My projects include a script that could perform data analytics on client data to provide meaningful insights, managing the backend of a server, and the creation of artificial data for script testing. While developing my coding skills I also developed key skills in communication and working with a team.
+                        </Text>
+                    </Container>
+                    <Container mt={2}>
                         <chakra.span fontSize={"18px"} fontWeight="bold">Intern in Software Development </chakra.span><chakra.span> - mCognito Labs</chakra.span>
                         <Badge>July 2020 - Janurary 2021</Badge>
                         <Text mt={2} fontSize="sm" >
@@ -99,9 +106,25 @@ const About = () => {
 
                 </Box>
             </LSection>
-
-            </Box>
             <RSection delay={0.5}>
+                <Box>
+                    <Heading as="h3" variant="section-title" color={useColorModeValue('#553C9A','pink')}>
+                        Higher Education
+                    </Heading>
+                    <Container >
+                        <chakra.span fontSize={"18px"} fontWeight="bold">BA in Computer Science</chakra.span><chakra.span> - Trinity College Dublin</chakra.span>
+                        <Badge>September 2022 - Early 2026</Badge>
+                        <Text mt={2} fontSize="sm" >
+                            I am currently pursuing a degree in Computer Science. I am also class rep for my course and am part of a number of societies.
+
+                        </Text>
+                    </Container>
+                      
+
+                </Box>
+            </RSection>
+            </Box>
+            <LSection delay={0.5}>
                 <Heading as="h3" variant="section-title" color={useColorModeValue('#553C9A','pink')}>
                     Contact me
                 </Heading>
@@ -136,7 +159,7 @@ const About = () => {
                     </SimpleGrid>
                 </Box>
 
-            </RSection>
+            </LSection>
 
         </Container>
 
