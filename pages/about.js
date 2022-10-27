@@ -85,14 +85,16 @@ const About = () => {
                         Professional Experience
                     </Heading>
                     <Container >
-                        <chakra.span fontSize={"18px"} fontWeight="bold">Full Stack Developer Intern </chakra.span><chakra.span> - Ambisense</chakra.span>
+                        <chakra.span fontSize={"18px"} fontWeight="bold">Full Stack Developer Intern </chakra.span>
+                        <p>Ambisense</p>
                         <Badge>June 2022 - September 2022</Badge>
                         <Text mt={2} fontSize="sm" >
                         Over my internship, at Ambisense I worked on a wide array of projects with varying technologies. I mostly used Python, Javascript, and bash during my internship. My projects include a script that could perform data analytics on client data to provide meaningful insights, manage the backend of a server, and create artificial data for script testing. While developing my coding skills I also developed key skills in communication and working with a team.
 </Text>
                     </Container>
                     <Container mt={2}>
-                        <chakra.span fontSize={"18px"} fontWeight="bold">Intern in Software Development </chakra.span><chakra.span> - mCognito Labs</chakra.span>
+                        <chakra.span fontSize={"18px"} fontWeight="bold">Intern in Software Development </chakra.span>
+                        <p> mCognito Labs</p>
                         <Badge>July 2020 - Janurary 2021</Badge>
                         <Text mt={2} fontSize="sm" >
                             At mCognito Labs, I developed my understanding of coding
@@ -112,8 +114,9 @@ const About = () => {
                         Higher Education
                     </Heading>
                     <Container >
-                        <chakra.span fontSize={"18px"} fontWeight="bold">BA in Computer Science</chakra.span><chakra.span> - Trinity College Dublin</chakra.span>
-                        <Badge>September 2022 - Early 2026</Badge>
+                        <chakra.span fontSize={"18px"} fontWeight="bold">BA in Computer Science</chakra.span>
+                        <p>Trinity College Dublin</p>
+                        <Badge>2022 - 2026</Badge>
                         <Text mt={2} fontSize="sm" >
                             I am currently pursuing a degree in Computer Science. I am also class rep for my course and am part of a number of societies.
 
