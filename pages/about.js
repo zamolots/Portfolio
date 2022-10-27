@@ -88,8 +88,8 @@ const About = () => {
                         <chakra.span fontSize={"18px"} fontWeight="bold">Full Stack Developer Intern </chakra.span><chakra.span> - Ambisense</chakra.span>
                         <Badge>June 2022 - September 2022</Badge>
                         <Text mt={2} fontSize="sm" >
-                        Over my internship at Ambisense I worked on a wide array of projects and with varying technologies. I mostly used Python, Javascript, and bash during my internship. My projects include a script that could perform data analytics on client data to provide meaningful insights, managing the backend of a server, and the creation of artificial data for script testing. While developing my coding skills I also developed key skills in communication and working with a team.
-                        </Text>
+                        Over my internship, at Ambisense I worked on a wide array of projects with varying technologies. I mostly used Python, Javascript, and bash during my internship. My projects include a script that could perform data analytics on client data to provide meaningful insights, manage the backend of a server, and create artificial data for script testing. While developing my coding skills I also developed key skills in communication and working with a team.
+</Text>
                     </Container>
                     <Container mt={2}>
                         <chakra.span fontSize={"18px"} fontWeight="bold">Intern in Software Development </chakra.span><chakra.span> - mCognito Labs</chakra.span>
