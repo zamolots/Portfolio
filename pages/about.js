@@ -126,8 +126,25 @@ const About = () => {
 
                 </Box>
             </RSection>
-            </Box>
             <LSection delay={0.5}>
+                <Box>
+                    <Heading as="h3" variant="section-title" color={useColorModeValue('#553C9A','pink')}>
+                        Volunteering
+                    </Heading>
+                    <Container >
+                        <chakra.span fontSize={"18px"} fontWeight="bold">Chairperson</chakra.span>
+                        <p>The Internet Society</p>
+                        <Badge>January 2023 - Present</Badge>
+                        <Text mt={2} fontSize="sm" >
+                        As Chairperson of Trinitys Internet Society, I oversee the day-to-day management of our servers and events, providing free hosting for student projects on physical servers within the university.
+                        </Text>
+                    </Container>
+                      
+
+                </Box>
+            </LSection>
+            </Box>
+            <RSection delay={0.5}>
                 <Heading as="h3" variant="section-title" color={useColorModeValue('#553C9A','pink')}>
                     Contact me
                 </Heading>
@@ -162,7 +179,7 @@ const About = () => {
                     </SimpleGrid>
                 </Box>
 
-            </LSection>
+            </RSection>
 
         </Container>
 
