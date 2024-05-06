@@ -5,7 +5,7 @@ import {
 
     Box,
     useColorModeValue,
-    Image, Center,
+    Image,
 
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/articleList'

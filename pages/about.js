@@ -10,8 +10,6 @@ import {
 } from "@chakra-ui/react";
 import LSection from "../components/lsection";
 import RSection from "../components/rsection";
-
-import NextLink from "next/link";
 import Layout from "../components/layouts/articleList";
 
 import {IoLogoGithub, IoLogoLinkedin} from "react-icons/io5";
@@ -73,8 +71,8 @@ const About = () => {
                         About me
                     </Heading>
                     <Container>
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                         Based in Dublin, Ireland, I am an experienced Developer with a background in both development and research. I am enthusiastic about pursuing more development opportunities, particularly in the field of LLM's.
-
                     </Container>
 
                 </Box>
