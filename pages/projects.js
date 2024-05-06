@@ -5,7 +5,7 @@ import {
 
     Box,
     useColorModeValue,
-    Image,
+    Image, Center,
 
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/articleList'
@@ -14,44 +14,47 @@ import LSection from "../components/lsection";
 import Section  from "../components/section"
 
 import {GridThing} from "../components/grid"
+import React from "react";
 
 const Projects = () => {
     return (
         <Layout title="Projects">
             <Container>
-                <Box display={{md:'flex'}} mt={{md:6}} >
-                    <Box
-                        flexShrink={0}
-                        mt={{ base: 4, md: 0 }}
-                        ml={{ md: 6}}
-                        mr={{md:6}}
-                        textAlign="center"
-                    >
+                <Box>
+                    <Box display={{md:'flex'}} mt={{md:6}} >
                         <Box
-                            borderColor={useColorModeValue('#553C9A','pink')}
-                            borderWidth={2}
-                            borderStyle="solid"
-                            w="100px"
-                            h="100px"
-                            display="inline-block"
-                            borderRadius="full"
-                            overflow='hidden'
+                            flexShrink={0}
+                            mt={{ base: 4, md: 0 }}
+                            ml={{ md: 6}}
+                            mr={{md:6}}
+                            textAlign="center"
                         >
-                            <Image
-                                src="/images/me.jpeg"
-                                alt="Profile image"
-                                borderRadius='full'
-                                width="100%"
-                                height="100%"
+                            <Box
+                                borderColor={useColorModeValue('#553C9A','pink')}
+                                borderWidth={2}
+                                borderStyle="solid"
+                                w="100px"
+                                h="100px"
+                                display="inline-block"
+                                borderRadius="full"
+                                overflow='hidden'
+                            >
+                                <Image
+                                    src="/images/me.jpg"
+                                    alt="Profile image"
+                                    borderRadius='full'
+                                    width="100%"
+                                    height="100%"
 
-                            />
+                                />
+                            </Box>
                         </Box>
-                    </Box>
-                    <Box flexGrow={1} alignItems="center">
-                        <Heading as="h1" variant="page-title" color={useColorModeValue('#553C9A','pink')} >
-                            Alex Zamolotskikh
-                        </Heading>
-                        <p>Software Developer</p>
+                        <Box flexGrow={1} alignItems="center">
+                            <Heading as="h1" align="center" variant="page-title" color={useColorModeValue('#553C9A','pink')} >
+                                Alex Zamolotskikh
+                            </Heading>
+                            <p align="center">ML Developer</p>
+                        </Box>
                     </Box>
                 </Box>
                 <Heading variant="section-title"  textAlign="center"  fontSize={35} mb={4} color={useColorModeValue('#553C9A','pink')}>

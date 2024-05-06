@@ -79,7 +79,7 @@ const Project = () =>(
                 <SimpleGrid columns={[2]} gap={6}>
                     <LSection delay={0.5} >
                         <Box align="end">
-                            <Link isExternal="true" href="https://github.com/Zampilled/Ordeo">
+                            <Link isExternal="true" href="https://github.com/Zampilled/Ordeo" legacyBehavior>
                                 <Button  variant="outline"
                                          rightIcon={<ExternalLinkIcon />}
                                          borderColor={useColorModeValue('#553C9A','pink')}
@@ -89,7 +89,7 @@ const Project = () =>(
                         </Box>
                     </LSection>
                     <RSection delay={0.5}>
-                        <Link isExternal="true" href="https://zamolo.herokuapp.com/">
+                        <Link isExternal="true" href="https://zamolo.herokuapp.com/" legacyBehavior>
                             <Button variant="outline" rightIcon={<ExternalLinkIcon />} borderColor={useColorModeValue('#553C9A','pink')} color={useColorModeValue('#553C9A','pink')}>Demo</Button>
                         </Link>
                     </RSection>

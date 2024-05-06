@@ -11,7 +11,8 @@ function Website ({Component, pageProps, router}) {
         <Chakra cookies={pageProps.cookies}>
             <Layout router={router}>
                 <AnimatePresence
-                    exitBeforeEnter
+                    mode={"wait"
+                    }
                     initial={true}
                     onExitComplete={() => {
                         if (typeof window !== 'undefined') {

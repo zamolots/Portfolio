@@ -10,6 +10,7 @@ export const GridThing = ({ children, id, title, image }) => (
     borderRadius="lg">
         <NextLink href={`/projects/${id}`}
                   scroll={false}
+                  legacyBehavior
 
         >
             <LinkBox cursor="pointer">

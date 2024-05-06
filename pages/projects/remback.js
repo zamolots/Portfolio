@@ -86,7 +86,7 @@ const Project = () =>(
                 <SimpleGrid columns={[2]} gap={6}>
                 <LSection delay={0.5} >
                     <Box align="end">
-                        <Link isExternal="true" href="https://github.com/Zampilled/Remback">
+                        <Link isExternal="true" href="https://github.com/Zampilled/Remback" legacyBehavior>
                     <Button  variant="outline"
                              rightIcon={<ExternalLinkIcon />}
                              borderColor={useColorModeValue('#553C9A','pink')}

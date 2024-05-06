@@ -41,7 +41,7 @@ const Page = () => {
                     <Section flexGrow={1} alignItems="" delay={1.5}>
                         <Stack spacing={4} align='start'>
 
-                                <NextLink href="/about" passHref >
+                                <NextLink href="/about" passHref legacyBehavior>
                                     <Button colorScheme={useColorModeValue('purple','pink', )} size='lg' variant="outline">
                                             About Me
                                     </Button>

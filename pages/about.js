@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import LSection from "../components/lsection";
 import RSection from "../components/rsection";
+
 import NextLink from "next/link";
 import Layout from "../components/layouts/articleList";
 
@@ -21,10 +22,12 @@ const About = () => {
 
     return(
         <Layout title="About Me"
-        >
+
+                >
 
 
         <Container >
+
             <Box >
             <Box display={{md:'flex'}} mt={{md:6}} >
                 <Box
@@ -45,7 +48,7 @@ const About = () => {
                         overflow='hidden'
                     >
                         <Image
-                            src="/images/me.jpeg"
+                            src="/images/me.jpg"
                             alt="Profile image"
                             borderRadius='full'
                             width="100%"
@@ -58,8 +61,10 @@ const About = () => {
                     <Heading as="h1" align="center" variant="page-title" color={useColorModeValue('#553C9A','pink')} >
                         Alex Zamolotskikh
                     </Heading>
-                    <p align="center">Software Developer</p>
+                    <p align="center">ML Developer</p>
                 </Box>
+
+
             </Box>
 
             <RSection delay={0.5}>
@@ -68,15 +73,10 @@ const About = () => {
                         About me
                     </Heading>
                     <Container>
-                        I am a Developer based out of Dublin, Ireland and am passionate about Web Development.
-                        I use this passion in my projects.
+                        Based in Dublin, Ireland, I am an experienced Developer with a background in both development and research. I am enthusiastic about pursuing more development opportunities, particularly in the field of LLM's.
 
                     </Container>
-                    <NextLink href="projects" passHref>
-                        <Button  ml={3.5} mt={2} color={useColorModeValue('#553C9A','pink')}>
-                            View Projects
-                        </Button>
-                    </NextLink>
+
                 </Box>
             </RSection>
             <LSection delay={0.5}>
@@ -84,6 +84,22 @@ const About = () => {
                     <Heading as="h3" variant="section-title" color={useColorModeValue('#553C9A','pink')}>
                         Professional Experience
                     </Heading>
+
+                    <Container mt={2}>
+                        <chakra.span fontSize={"18px"} fontWeight="bold">Intern @ ICTL Research Lab</chakra.span>
+                        <p>JetBrains</p>
+                        <Badge>June 2023 - Present</Badge>
+                        <Text mt={2} fontSize="sm" >
+                            During my internship at the ICTL Lab, I completed a project that
+                            extracted sentiments of messages and suggested reactions for that
+                            message using an AI model of my design. This internship taught me
+                            how to use popular AI libraries (PyTorch, Transformers, Gensim, etc)
+                            and how to work in a research environment.
+
+                        </Text>
+                    </Container>
+
+
                     <Container >
                         <chakra.span fontSize={"18px"} fontWeight="bold">Full Stack Developer Intern </chakra.span>
                         <p>Ambisense</p>
@@ -91,19 +107,6 @@ const About = () => {
                         <Text mt={2} fontSize="sm" >
                         Over my internship, at Ambisense I worked on a wide array of projects with varying technologies. I mostly used Python, Javascript, and bash during my internship. My projects include a script that could perform data analytics on client data to provide meaningful insights, manage the backend of a server, and create artificial data for script testing. While developing my coding skills I also developed key skills in communication and working with a team.
 </Text>
-                    </Container>
-                    <Container mt={2}>
-                        <chakra.span fontSize={"18px"} fontWeight="bold">Intern in Software Development </chakra.span>
-                        <p> mCognito Labs</p>
-                        <Badge>July 2020 - Janurary 2021</Badge>
-                        <Text mt={2} fontSize="sm" >
-                            At mCognito Labs, I developed my understanding of coding
-                            specifically Java, JavaScript, HTML/CSS with a focus on web
-                            and mobile app development for eLearning.
-                            My duties included working with others to develop software
-                            development and independently reviewing code.
-
-                        </Text>
                     </Container>
 
                 </Box>
@@ -122,7 +125,7 @@ const About = () => {
 
                         </Text>
                     </Container>
-                      
+
 
                 </Box>
             </RSection>
@@ -139,7 +142,7 @@ const About = () => {
                         As Chairperson of Trinitys Internet Society, I oversee the day-to-day management of our servers and events, providing free hosting for student projects on physical servers within the university.
                         </Text>
                     </Container>
-                      
+
 
                 </Box>
             </LSection>
@@ -154,7 +157,7 @@ const About = () => {
 
 
                         <Link isExternal="true"  href="https://github.com/zampilled"
-                        >
+                              legacyBehavior>
                             <Button
 
                                 size={"md"}
@@ -165,7 +168,7 @@ const About = () => {
                                 color={useColorModeValue('#553C9A','pink')} leftIcon={<IoLogoGithub/>} >Github</Button>
                         </Link>
                         <Link isExternal="true"  href="https://www.linkedin.com/in/zampilled/"
-                        >
+                              legacyBehavior>
                             <Button
 
 

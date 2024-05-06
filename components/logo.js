@@ -21,7 +21,7 @@ const Logo = () => {
 
 
     return (
-        <Link href="/" scroll={false} >
+        <Link href="/" scroll={false} legacyBehavior >
             <a>
                 <LogoBox >
                     <Box
