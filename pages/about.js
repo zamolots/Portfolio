@@ -86,14 +86,13 @@ const About = () => {
                     <Container mt={2}>
                         <chakra.span fontSize={"18px"} fontWeight="bold">Intern @ ICTL Research Lab</chakra.span>
                         <p>JetBrains</p>
-                        <Badge>June 2023 - Present</Badge>
+                        <Badge>June 2023 - June 2024</Badge>
                         <Text mt={2} fontSize="sm" >
-                            During my internship at the ICTL Lab, I completed a project that
-                            extracted sentiments of messages and suggested reactions for that
-                            message using an AI model of my design. This internship taught me
-                            how to use popular AI libraries (PyTorch, Transformers, Gensim, etc)
-                            and how to work in a research environment.
-
+                            During my internship at ICTL, I completed several projects:
+                            I created a neural network that predicts emoji reactions based on the sentiment of messages.
+                            I ran a study of people's use of reactions in messages and their tendencies to use them depending on other people's reactions.
+                            I then turned this model and study into a research paper which is currently being considered for CSCW 2025.
+                            I worked on a RAG approach for finding relevant people in a corporate structure for a certain problem.
                         </Text>
                     </Container>
 
@@ -103,8 +102,14 @@ const About = () => {
                         <p>Ambisense</p>
                         <Badge>June 2022 - September 2022</Badge>
                         <Text mt={2} fontSize="sm" >
-                        Over my internship, at Ambisense I worked on a wide array of projects with varying technologies. I mostly used Python, Javascript, and bash during my internship. My projects include a script that could perform data analytics on client data to provide meaningful insights, manage the backend of a server, and create artificial data for script testing. While developing my coding skills I also developed key skills in communication and working with a team.
-</Text>
+                            Over my internship, at Ambisense I worked on a wide array of projects with varying technologies. I mostly used Python, Javascript, and Bash during my internship.
+                            My projects include:
+                            A script that could perform data analytics on client data to provide meaningful insights
+                            I Managed the backend development of a service
+                            I created artificial data for script testing.
+                            While developing my coding skills I also developed key skills in communication and working with a team.
+
+                        </Text>
                     </Container>
 
                 </Box>
