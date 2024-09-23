@@ -90,7 +90,7 @@ const About = () => {
                         <Text mt={2} fontSize="sm" >
                             During my internship at ICTL, I completed several projects:
                             I created a neural network that predicts emoji reactions based on the sentiment of messages.
-                            I ran a study of people's use of reactions in messages and their tendencies to use them depending on other people's reactions.
+                            I ran a study of peoples use of reactions in messages and their tendencies to use them depending on other peoples reactions.
                             I then turned this model and study into a research paper which is currently being considered for CSCW 2025.
                             I worked on a RAG approach for finding relevant people in a corporate structure for a certain problem.
                         </Text>
