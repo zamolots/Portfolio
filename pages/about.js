@@ -82,6 +82,15 @@ const About = () => {
                     <Heading as="h3" variant="section-title" color={useColorModeValue('#553C9A','pink')}>
                         Professional Experience
                     </Heading>
+                    <Container mt={2}>
+                        <chakra.span fontSize={"18px"} fontWeight="bold">Software Development Intern</chakra.span>
+                        <p>Health Beacon</p>
+                        <Badge>October 2024 - Present</Badge>
+                        <Text mt={2} fontSize="sm" >
+                            Helping to maintain a codebase in the tightly regulated market of pharmaceuticals.
+                        </Text>
+                    </Container>
+
 
                     <Container mt={2}>
                         <chakra.span fontSize={"18px"} fontWeight="bold">Intern @ ICTL Research Lab</chakra.span>
