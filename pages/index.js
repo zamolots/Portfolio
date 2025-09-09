@@ -116,8 +116,8 @@ const About = () => {
                                     the sentiment of messages.
                                     </ListItem>
                                     <ListItem>
-                                    Ran a study of people's use of reactions in messages and their tendencies to use
-                                    them depending on other people's reactions.
+                                    Ran a study of peoples use of reactions in messages and their tendencies to use
+                                    them depending on other peoples reactions.
                                     </ListItem>
                                     <ListItem>
                                     Compiled this model and study into a research paper.
