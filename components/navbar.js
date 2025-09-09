@@ -79,17 +79,12 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
-                    <LinkItem href="/about" path={path}>
-                        About Me
-                    </LinkItem>
-                    <LinkItem href="/projects" path={path}>
-                        Projects
-                    </LinkItem>
+
                     <LinkItem leftIcon={<IoDocumentText/>} href="/AlexZamolotskikhResume.pdf" path={path}>
                         Resume
                     </LinkItem>
-                    <LinkItem isExternal="true" leftIcon={<IoLogoGithub/>}  href="https://github.com/Zampilled/Portfolio" path={path}>
-                        Source
+                    <LinkItem isExternal="true" leftIcon={<IoLogoGithub/>}  href="https://github.com/Zamolots" path={path}>
+                        GitHub
                     </LinkItem>
 
 
