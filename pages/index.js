@@ -107,7 +107,7 @@ const About = () => {
                             <RSection delay={0.2}>
 
                             <Container mt={2}>
-                                <chakra.span fontSize={"18px"} fontWeight="bold">Intern @ ICTL Research Lab</chakra.span>
+                                <chakra.span fontSize={"18px"} fontWeight="bold">ML Research Intern @ ICTL Lab</chakra.span>
                                 <p>JetBrains</p>
                                 <Badge>June 2023 - June 2024</Badge>
                                 <UnorderedList mt={2} fontSize="sm" >
